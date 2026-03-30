@@ -1,0 +1,124 @@
+.data-table__wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.data-table th,
+.data-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.98rem;
+  vertical-align: middle;
+}
+
+.data-table th {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #374151;
+  background-color: #f8fafc;
+}
+
+.data-table td {
+  color: #111827;
+}
+
+.data-table__actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.data-table__button {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.data-table__button--edit {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.data-table__button--save {
+  background-color: #059669;
+  color: #ffffff;
+}
+
+.data-table__button--cancel {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.data-table__button:hover {
+  opacity: 0.9;
+}
+
+.data-table__input {
+  width: 100%;
+  min-width: 120px;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  color: #111827;
+  background-color: #ffffff;
+}
+
+.data-table__empty {
+  padding: 20px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  text-align: center;
+  color: #475569;
+  background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .data-table {
+    background-color: #161b22;
+  }
+
+  .data-table th,
+  .data-table td {
+    border-bottom-color: #2a2f3a;
+  }
+
+  .data-table th {
+    color: #e5e7eb;
+    background-color: #111827;
+  }
+
+  .data-table td {
+    color: #f3f4f6;
+  }
+
+  .data-table__button--cancel {
+    background-color: #374151;
+    color: #f9fafb;
+  }
+
+  .data-table__input {
+    border-color: #475569;
+    color: #f3f4f6;
+    background-color: #0f172a;
+  }
+
+  .data-table__empty {
+    border-color: #334155;
+    color: #cbd5e1;
+    background-color: #161b22;
+  }
+}
